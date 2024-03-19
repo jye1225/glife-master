@@ -1,0 +1,33 @@
+.foot {
+  background-color: var(--color-lg);
+}
+.foot .inner {
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.foot .inner > * {
+  border: 5px solid lemonchiffon;
+}
+.foot nav .foot .outside {
+  display: flex;
+}
+.foot nav a {
+  color: var(--color-wh);
+  padding: 2rem 2rem 2rem 0;
+}
+.foot .copy {
+  width: 100%;
+}
+.foot .copy img {
+  height: 80px;
+}
+.foot .family {
+  position: absolute;
+  /* opacity: 0;
+  top: 2rem; */
+}
+.foot .family ul {
+  display: none;
+}

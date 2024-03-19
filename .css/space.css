@@ -1,0 +1,62 @@
+.space {
+  padding: 100px 0;
+}
+.space .inner {
+  border: 1px solid red;
+  position: relative;
+}
+.space img {
+  width: 40%;
+  position: absolute;
+  right: 0;
+  top: 150px;
+  opacity: 0;
+}
+.space li:first-of-type img {
+  opacity: 1;
+}
+
+.spaceList {
+  border: 1px solid lightblue;
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 10%;
+}
+.spaceList li {
+  border: 1px solid blue;
+}
+.space li:nth-of-type(2) {
+  width: 60%;
+}
+.spaceList li span {
+  display: inline-block;
+  background-color: var(--color-mb);
+  padding: 1rem 2rem;
+  font-size: 20px;
+  background-color: var(--color-mb);
+  color: var(--color-wh);
+  border-radius: 50px;
+  margin: 0 5px 16px 0;
+  border: 1px solid var(--color-mb);
+  transition: 0.3s;
+}
+.spaceList li span:hover {
+  background-color: var(--color-mb);
+  color: var(--color-wh);
+}
+.spaceList li span:hover + img {
+  opacity: 1;
+}
+@media (max-width: 800px) {
+  .space img {
+    width: 100%;
+  }
+  .spaceList {
+    padding-top: 70%;
+    width: 100%;
+  }
+  .spaceList li {
+    width: auto !important;
+  }
+}
